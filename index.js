@@ -3,10 +3,12 @@ const btn = document.getElementsByClassName("btn")[0];
 var number = Math.floor(Math.random() * 100) + 1;
 let count = 0;
 console.log(number);
+
 function reset() {
-  var number = Math.floor(Math.random() * 100) + 1;
+  number = Math.floor(Math.random() * 100) + 1;
   console.log(number);
   b.innerHTML = "choose number between 1 and 100";
+  count = 0;
 
 }
 btn.addEventListener("click", function() {
